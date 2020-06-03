@@ -14,11 +14,11 @@ button2.addEventListener("click", (e) => {
 });
 
 // 2.
-// let largeElement = document.querySelector("h1");
-// largeElement.addEventListener("mouseover", (e) => {
-// 	alert("Hey, I told you not to hover over me!");
-// });
-
+let largeElement = document.querySelector("h1");
+largeElement.addEventListener("mouseover", (e) => {
+	alert("Hey, I told you not to hover over me!");
+});
+	
 // 3.
 // Found in HTML
 
@@ -35,6 +35,9 @@ submitBtns[0].addEventListener("click", (e) => {
 	// b.
 	else
 		alert("Password is incorrect");
+
+	// to disable page reload
+	return false;
 });
 
 // 5. style.css
