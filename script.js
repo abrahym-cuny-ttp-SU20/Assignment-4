@@ -25,7 +25,7 @@ largeElement.addEventListener("mouseover", (e) => {
 // 4. 
 let passBtn = document.querySelector("input[type=password]");
 let submitBtns = document.querySelectorAll("input[type=submit]");
-let passText = document.querySelector("h1#passTextDisplay");
+let passText = document.querySelector("p#passTextDisplay");
 
 submitBtns[0].addEventListener("click", (e) => {
 	// a. 
@@ -50,7 +50,7 @@ let vol = document.querySelector("h1#sphereDisplay");
 submitBtns[1].addEventListener("click", (e) => {
 	console.log(r);
 	console.log(r.value);
-	vol.innerHTML = ((4/3) * Math.PI * Math.pow(r.value, 3));
+	vol.innerHTML = `${(Math.round(((4/3) * Math.PI * Math.pow(r.value, 3)) * 100) / 100)} cubic units`;
 });
 
 
